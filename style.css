@@ -1,42 +1,125 @@
+
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+}
+.main {
+    margin: 0;
+    padding-bottom: 7em;
+}
+.header {
+    background: rgb(167, 160, 160);
+    color: black;
+    padding: 0.5em 3em;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+.navbar ul li {
+    padding: 1em;
+    color: black;
+}
+.logo {
+    width: 45%;
+    height: 45%;
+}
+.logo a {
+    text-decoration: none;
+    color: black;
 }
 
-#contenedor {
-    width: 85%;
-    margin: 0 auto;
+.banner {
+    padding-bottom: 3.5em;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+}
+.banner img {
+    border: 2px solid black;
+}
+
+.conteiner {
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: lightslategrey;
+    width: 90%;
+    background: rgb(197, 192, 192);
+    margin: 0 auto;
 }
 
-#contenedor img {
-    width: 100%;
-}
-
-#contenedor > article {
-    width: 30%;
+.noticia1 {
+    background: red;
     padding: 2%;
+    width: 30%;
     box-sizing: border-box;
 }
-
-.primero {
-    background-color: lightsalmon;
+.noticia1 img {
+    width: 90%;
+}
+.noticia2 {
+    background: lightblue;
+    padding: 2%;
+    width: 30%;
+    box-sizing: border-box;
+}
+.noticia2 img {
+    width: 90%;
+}
+.noticia3 {
+    background: lightgreen;
+    padding: 2%;
+    width: 30%;
+    box-sizing: border-box;
+}
+.noticia3 img {
+    width: 90%;
+}
+.footer {
+    margin-top: 4em;
+    border-top: 2px solid black;
+    padding: 2em 3em;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(167, 160, 160);
 }
 
-.segundo {
-    background-color: lightseagreen;
+.map {
+    width: 50%;
+    border: 3px solid black;
 }
 
-.tercero {
-    background-color: lightgreen;
-}
-
-@media screen and (min-width: 660px) and (max-width: 1200px) {
-    body {
-    background-color: lime;
+@media screen and (min-width: 360px) and (max-width: 960px) {
+    header {
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+    .logo {
+    width: 100%;
+    text-align: center;
+    }
+    .banner {
+    display: none;
+    }
+    .conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    }
+    .noticia1 {
+    width: 100%;
+    }
+    .noticia2 {
+    width: 100%;
+    }
+    .noticia3 {
+    width: 100%;
+    }
+    .navbar ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     }
 }
